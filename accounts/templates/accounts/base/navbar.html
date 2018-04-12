@@ -1,0 +1,22 @@
+<div class="navbar-fixed">
+	<nav class="nav-wrapper  red darken-4 z-depth-0" id="navigator">
+		<a href="{% url 'accounts:home' %}" class="brand-logo" style="margin-left: 23px;">BI</a>
+		<ul id="nav-demo" class="right hide-on-med-and-down">
+			<!-- <li>
+				<a href="index"><i class="material-icons left">home</i>Home</a>
+			</li>
+			<li>
+				<a href="index"><i class="material-icons left">loyalty</i>About</a>
+			</li>
+			<li>
+				<a href="index"><i class="material-icons left">phone</i>Contact</a>
+			</li>-->
+			<li>
+				<a href="/accounts/login"><i class="material-icons left">loyalty</i>Sign In</a>
+			</li> 
+			<li>
+				<a href="{% url 'accounts:register' %}"><i class="material-icons left">person_add</i>Register Now</a>
+			</li>
+		</ul>
+	</nav>
+</div>

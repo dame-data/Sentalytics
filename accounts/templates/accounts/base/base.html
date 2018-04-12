@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %} Sentiment Analytica {% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'accounts/css/animate.css' %}"/>
+	<link rel="stylesheet" href="{% static 'accounts/css/materialize.min.css' %}"/>
+	<link rel="stylesheet" href="{% static 'accounts/css/styles.css' %}"/>
+</head>
+<body>
+	{% block navbar %}
+	{% endblock %}
+	
+	{% block content %}
+	{% endblock %}
+	<script src="{% static 'accounts/js/jquery.js'%}"></script>
+	<script src="{% static 'accounts/js/materialize.min.js' %}"></script>
+	<script src="{% static 'accounts/js/moment.js' %}"></script>
+	<script src="{% static 'accounts/js/lodash.js' %}"></script>
+
+</body>
+</html>

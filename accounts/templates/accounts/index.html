@@ -1,0 +1,26 @@
+{% extends "accounts/base/base.html" %}
+
+{% block title %} Home | Sentiment Analytica {% endblock %}
+{% block navbar %}
+	{% include "accounts/base/navbar.html" %}
+{% endblock navbar %}
+
+{% block content %}
+	<main>
+		<div class="row">
+			<div class="container">
+				<div class="col s12 m6 l6 offset-m3 offset-l3 card-panel" style="padding-top: 20px;padding-bottom: 20px;position: relative;top: 8rem;">
+					<form method="post">
+					  <div class="col s12 m12 l12">
+					  	{% csrf_token %}
+					  	{{ form.as_p }}
+					  </div>
+					  <div class="input-field col s12 m12 l12">
+					  	<button type="submit" class="btn waves-effect waves-light">Log In</button>
+					  </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock content %}

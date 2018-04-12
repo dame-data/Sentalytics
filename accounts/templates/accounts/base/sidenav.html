@@ -1,0 +1,131 @@
+<div class="navigation z-depth-0" style="border-right: 1px solid #e8e8e8;margin-left: -15px;z-index: 10;margin-top:2px;">
+	<ul class="nav-demo">
+		<li id="home" style="margin-right: -6px;">
+			<a href="{% url 'accounts:home' %}">
+				<i class="material-icons left icon">dashboard</i>
+				<span class="menu_name">Dashboard</span>
+			</a>
+		</li>
+		<li id="home" style="margin-right: -6px;">
+			<a href="/accounts/attachments/{{ user.id }}">
+				<i class="material-icons left icon">attachment</i>
+				<span class="menu_name">Files</span>
+			</a>
+		</li>
+		<li id="home" style="margin-right: -6px;">
+			<a href="">
+				<i class="material-icons left icon">star</i>
+				<span class="menu_name">Starred Files</span>
+			</a>
+		</li>
+
+	   <div class="divider"></div>
+        <li class="grey-text text-accent-1 header disabled">Analysis</li>
+		<li style="margin-right: -6px;">
+			<a href="/accounts/sentiment/{{ user.id }}">
+				<i class="material-icons left icon">pie_chart</i>
+				<span class="menu_name">Sentiment </span>
+			</a>
+		</li>
+
+		<li style="margin-right: -6px;">
+			<a href="admin/reports">
+				<i class="material-icons left icon">print</i>
+				<span class="menu_name">Text Summarization </span>
+			</a>
+		</li>
+
+
+		<div class="divider"></div>
+		<li class="grey-text text-accent-1 header disabled">General Settings</li>
+		<li style="margin-right: -6px;">
+			<a href="admin/edit">
+				<i class="material-icons left icon">person_pin</i>
+				<span class="menu_name">Edit Profile</span>
+			</a>
+		</li>
+
+		<li style="margin-right: -6px;">
+			<a href="/accounts/logout">
+				<i class="material-icons left icon">power_settings_new</i>
+				<span class="menu_name">Logout</span>
+			</a>
+		</li> 
+
+      <!--   <li style="margin-right: -6px;">
+            <a href="admin/claims">
+                <i class="material-icons left icon">loyalty</i>
+                <span class="menu_name">Claim Mgmt</span>
+            </a>
+        </li>
+        <li style="margin-right: -6px;">
+            <a href="admin/salaries">
+                <i class="material-icons left icon">credit_card</i>
+                <span class="menu_name">Salary Details</span>
+            </a>
+        </li>
+        <li style="margin-right: -6px;">
+            <a href="admin/travels">
+                <i class="material-icons left icon">time_to_leave</i>
+                <span class="menu_name">Travel Desk</span>
+            </a>
+        </li>
+
+        <div class="divider"></div>
+        <li class="grey-text text-accent-1 header disabled">Data Analysis</li>
+		<li style="margin-right: -6px;">
+			<a href="admin/analytics">
+				<i class="material-icons left icon">pie_chart</i>
+				<span class="menu_name">Analytics </span>
+			</a>
+		</li>
+
+		<li style="margin-right: -6px;">
+			<a href="admin/reports">
+				<i class="material-icons left icon">print</i>
+				<span class="menu_name">Reports </span>
+			</a>
+		</li>
+
+
+		<div class="divider"></div>
+		<li class="grey-text text-accent-1 header disabled">General Settings</li>
+		<li style="margin-right: -6px;">
+			<a href="admin/edit">
+				<i class="material-icons left icon">person_pin</i>
+				<span class="menu_name">Edit Profile</span>
+			</a>
+		</li> -->
+
+		<!-- <li style="margin-right: -6px;">
+			<a href="admin/password">
+				<i class="material-icons left icon">vpn_lock</i>
+				<span class="menu_name">Change Password</span>
+			</a>
+		</li>
+
+        <div class="divider"></div>
+        <li class="grey-text text-accent-1 header disabled">Reported Issues</li>
+        <li style="margin-right: -6px;">
+            <a href="admin/feedback">
+                <i class="material-icons left icon">bug_report</i>
+                <span class="menu_name">Issues</span>
+            </a>
+        </li>
+
+        <li style="margin-right: -6px;">
+            <a href="admin/feedback">
+                <i class="material-icons left icon">flag</i>
+                <span class="menu_name">Feedback</span>
+            </a>
+        </li>
+
+		<li style="margin-right: -6px;">
+			<a href="/accounts/logout">
+				<i class="material-icons left icon">power_settings_new</i>
+				<span class="menu_name">Logout</span>
+			</a>
+		</li> -->
+		
+	</ul>
+</div>
